@@ -28,7 +28,7 @@ body
 
 .main-content
 {
-  text-align: center;
+  text-align: left;
   animation: slow-reveal-kf 2s forwards;
 }
 

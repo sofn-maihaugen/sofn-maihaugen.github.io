@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@keyframes unfold-y-kf
+{
+  from { transform-origin: right top; transform: scale(0.1); opacity: 0.5; }
+  to { transform-origin: left top; transform: scale(1); opacity: 1; }
+}
+
+@keyframes slow-reveal-kf { from { opacity: 0; } to { opacity: 1; } }
+
+body
+{
+  font-family: Arial,sans-serif,normal;
+  font-size: 125%;
+}
+
+.logo-banner
+{
+  animation: unfold-y-kf 500ms ease-out forwards;
+  text-align: center;
+}
+
+.logo-banner img
+{
+  max-width: 250px;
+  padding: 0px 0px 10px;
+}
+
+.main-content
+{
+  text-align: center;
+  animation: slow-reveal-kf 2s forwards;
+}
+
+.social-media-presence
+{
+  text-align: center;
+  animation: slow-reveal-kf 3s forwards;
+}
+
+.social-media-presence div
+{
+  display: inline-block;
+  padding: 0px 10px 0px;
+}
+
+.social-media-presence img
+{
+  width: 2em;
+  height: 2em;
+}
